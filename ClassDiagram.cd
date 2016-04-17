@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="SearchAThing::Arduino::Net::SRUDP::Client">
+    <Position X="0.5" Y="1.75" Width="5.5" />
+    <Members>
+      <Method Name="ForceDisconnect" Hidden="true" />
+      <Field Name="localEndPoint" Hidden="true" />
+      <Method Name="ManageAcks" Hidden="true" />
+      <Field Name="net" Hidden="true" />
+      <Field Name="remoteEndPoint" Hidden="true" />
+      <Field Name="remoteHwAddress" Hidden="true" />
+      <Field Name="rxId" Hidden="true" />
+      <Method Name="Send" Hidden="true" />
+      <Method Name="SendChunk" Hidden="true" />
+      <Field Name="state" Hidden="true" />
+      <Field Name="txChunkSizeMax" Hidden="true" />
+      <Field Name="txId" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EAUAAAABAAMAAEAAAEAgAIAwACAAECAEQAEgBAEAAAw=</HashCode>
+      <FileName>SRUDP_Client.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="SearchAThing::Arduino::Net::SRUDP::ClientState">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAACAAAAAAAAAAAAAAAAAAAAAgAAQAA=</HashCode>
+      <FileName>SRUDP_Client.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SearchAThing::Arduino::Net::SRUDP::TransactionResult">
+    <Position X="6.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAAAAAA=</HashCode>
+      <FileName>SRUDP_Client.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SearchAThing::Arduino::Net::SRUDP::OpCodeType">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAIAAAAAAABAAAAAAAAAAAEA=</HashCode>
+      <FileName>SRUDP_Client.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
