@@ -358,6 +358,7 @@ namespace SearchAThing
 
 			//----------------------------------------------------------
 			// SRUDP
+			// ref. doc https://searchathing.com/?p=59
 			//----------------------------------------------------------
 
 			SRUDPHeader *SRUDPGetHeader(UDPHeader *udp)

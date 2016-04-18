@@ -21,6 +21,8 @@
 * DEALINGS IN THE SOFTWARE.
 */
 
+// ref. doc https://searchathing.com/?p=59
+
 #ifndef _SEARCHATHING_ARDUINO_NET_SRUDP_CLIENT_H
 #define _SEARCHATHING_ARDUINO_NET_SRUDP_CLIENT_H
 

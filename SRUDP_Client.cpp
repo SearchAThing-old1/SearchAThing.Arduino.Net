@@ -21,6 +21,8 @@
 * DEALINGS IN THE SOFTWARE.
 */
 
+// ref. doc https://searchathing.com/?p=59
+
 #include <SearchAThing.Arduino.Utils\DebugMacros.h>
 #include "SRUDP_Client.h"
 
