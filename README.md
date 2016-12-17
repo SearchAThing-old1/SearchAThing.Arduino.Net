@@ -841,19 +841,19 @@ I started this project to allow me to talk to arduino using the enc28j60. While 
 
 #### Ack in time
 
-![img](doc/SRUDP_ack_in_time.png)
+![img](doc/srudp_ack_in_time.png)
 
 In the situation explained in the above figure the sender A successfully sends the message to B and receive an acknowledge before the ack timeout. 
 
 #### Ack lost
 
-![img](doc/SRUDP_ack_lost.png)
+![img](doc/srudp_ack_lost.png)
 
 In this scenario the message was sent successfully, then the other party B process the message doing some job, but for some reason the acknowledge failed. In this case the message originator will send the entire message again when the ack timeout expire and then the party B need to know that previous seen message, already processed, need to be skipped to avoid a new processing. An acknowledge will be sent back to the message originator to let him know that the message was received.
  
 #### Connection lost
 
-![img](doc/SRUDP_connection_lost.png)
+![img](doc/srudp_connection_lost.png)
 
 In this specific case the message was received and processed by the other party B but A was not able to receive the ack before the connection timeout. In this scenario the connection must be reestablished
 
