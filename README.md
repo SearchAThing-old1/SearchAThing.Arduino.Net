@@ -6,20 +6,20 @@ This library if preparatory to the SearchAThing.Arduino.Enc28j60 driver library.
 
 | item | description |
 |---|---|
-| IpEndPoint | Simple class to manage ip address and port |
-| Checksum | Internet checksum ( [RFC1071](http://www.faqs.org/rfcs/rfc1071.html) [4.1] ) |
-| EthernetII | Ethernet protocol |
-| ARP | Address Reverse Protocol |
-| IP | Internet Protocol |
-| ICMP | Internet Control Message Protocol |
-| UDP | User Datagram Protocol |
-| Ephemeral ports | Temporary port used to track a communication session. |
-| DHCP | Dynamic Host Control Protocol |
-| DNS | Domain Name Server |
-| EthNet | SAT network subsystem |
-| EthDriver | Arduino network driver plugin |
-| EthProcess | Arduino network subsystem process |
-| SRUDP | Simple Realiable UDP |
+| [IpEndPoint](#ipendpoint) | Simple class to manage ip address and port |
+| [Checksum](#checksum) | Internet checksum ( [RFC1071](http://www.faqs.org/rfcs/rfc1071.html) [4.1] ) |
+| [EthernetII](#ethernetii) | Ethernet protocol |
+| [ARP](#arp) | Address Reverse Protocol |
+| [IP](#ip) | Internet Protocol |
+| [ICMP](#icmp) | Internet Control Message Protocol |
+| [UDP](#udp) | User Datagram Protocol |
+| [Ephemeral ports](#ephemeral-ports) | Temporary port used to track a communication session. |
+| [DHCP](#dhcp) | Dynamic Host Control Protocol |
+| [DNS](#dns) | Domain Name Server |
+| [EthNet](#ethnet) | SAT network subsystem |
+| [EthDriver](#ethdriver) | Arduino network driver plugin |
+| [EthProcess](#ethprocess) | Arduino network subsystem process |
+| [SRUDP](#srudp) | Simple Realiable UDP |
 
 > For a technical documentation of the API please refer to the documentation contained inside the source code header files accessible through the IDE intellisense. Examples about protocols, network subsystem and ethernet drivers are shown in the SearchAThing.Arduino.Enc28j60 section where a driver for that ethernet controller allow to test real connection data while in this page only theoretical and introductory aspects are explained.
 
@@ -634,8 +634,7 @@ The SAT network subsystem is able to manage the automatic configuration of ipadd
 
 | item | description |
 |---|---|
-| lease time | 
-seconds for which the assigned dhcp client information still valid, after this period another request can update or confirm previously received parameters |
+| lease time | seconds for which the assigned dhcp client information still valid, after this period another request can update or confirm previously received parameters |
 | hostname | textual name that dhcp server assign to the client |
 | domain name | name of the domain that dhcp is serving |
 | gateway | ip address of the destination to which route packet when the destination ip not fall into the network address space: for example if I request a name resolution using an external internet dns such as the google dns 8.8.8.8 from my lan then the SAT network subsystem will create a packet where the destination IP still 8.8.8.8 but the destination MAC will be the one resolved from the gateway ip address, this way our request can exit through internet from the lan and routed back through the os of our firewall/router that acts as gateway |
